@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'SegoeUI';
+	src: url('segoeui-webfont.eot');
+	src: local('☺'), url('segoeui-webfont.woff') format('woff'), url('segoeui-webfont.ttf') format('truetype'), url('segoeui-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SegoePrint';
+	src: url('segoepr-webfont.eot');
+	src: local('☺'), url('segoepr-webfont.woff') format('woff'), url('segoepr-webfont.ttf') format('truetype'), url('segoepr-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

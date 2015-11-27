@@ -1,0 +1,108 @@
+/* Set the default font, site-wide, to SegoeUI */
+* {font-family: 'SegoeUI';}
+
+/* General Styles */
+.left {text-align: left;}
+.center {text-align: center;}
+.right {text-align: right;}
+
+
+/* CUSTOM COLORS */
+.blue {color: #2C6897;}
+
+/* FONT DECLARATIONS */
+/* Declare the font classes for the Segoe Fonts */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-family: 'SegoePrint';
+  color: #2C6897;
+}
+.content p {
+  font-size: 16px; 
+  font-family: 'SegoeUI';
+}
+/* Call out for the fieldset legends on the What We Do page */
+legend {font-family: 'SegoePrint'; color: #2C6897; text-align: center; font-size: 36px;}
+
+
+/* CLASS SPECIFIC STYLES */
+.supernav {
+  width: 100%; 
+  background: black; 
+  color: white; 
+  height: 24px; 
+  text-align: right;
+}
+
+/* Make logo images fit their parent element */
+.logo img {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+/* Push the tagline down to center it with the logo */
+.tagline {
+  padding-top: 40px;
+}
+
+/***** Overrides for the Bootstrap navbar *****/
+/* Center all the text inside the links, and put a border between all of them */
+.nav li {
+  text-align: center;
+  border-right: 1px solid black;
+}
+.nav li:last-child {
+  border-right: none;
+}
+
+/* Set the font colors for the top and bottom rows */
+.top_nav {
+  font-size: 18px;
+  color: black;
+}
+.bottom_nav {
+  font-size: 24px;
+  color: #2C6897;
+}
+
+/* Change the background and text colors for the hover state */
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  background: #D3D9F1;
+  text-decoration: none;
+ }
+/* Change the background color for the active state */
+.navbar .nav .active > a{
+  background: #2C6897;
+  box-shadow:none;
+}
+/* Change the bottom font color to white in the active state */
+.navbar .nav .active > a > .bottom_nav {
+  color: white;
+}
+/* Reset the bottom font color to blue when hovering while in the active state */
+.navbar .nav .active > a:hover > .bottom_nav {
+  color: #2C6897;
+}
+
+/* Pad the footer so  it's not right below the content */
+.footer {
+  margin-top: 40px;
+}
+
+/* Code to make the embedded Google Map play nice with responsive features */
+/* See here - smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/ */
+.google-maps {
+    position: relative;
+    padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/******** THE SANDBOX *********/
